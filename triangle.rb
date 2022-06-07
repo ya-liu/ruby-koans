@@ -15,9 +15,13 @@
 #
 def triangle(a, b, c)
   # WRITE THIS CODE
-  if a == b and a == c and b == c
+  raise TriangleError if [a,b,c].min <= 0
+  x, y, z = [a,b,c].sort
+  raise TriangleError if x + y <= z
+
+  if a == b && a == c
     return :equilateral
-  elsif (a == b and a != c) or (a == c and a != b) or (b == c and b != a)
+  elsif (a == b && a != c) || (a == c && a != b) || (b == c && b != a)
     return :isosceles
   else
     return :scalene
