@@ -31,3 +31,5 @@ class AboutTrueAndFalse < Neo::Koan
   end
 
 end
+
+# completed at init
