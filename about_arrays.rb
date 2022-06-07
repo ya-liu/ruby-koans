@@ -82,3 +82,5 @@ class AboutArrays < Neo::Koan
   end
 
 end
+
+# completed at init
